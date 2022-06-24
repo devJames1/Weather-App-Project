@@ -1,0 +1,4 @@
+const config = {
+  apikey: "YOUR_FIRST_API_KEY_GOES_HERE",
+  apikey2: "YOUR_SECOND_API_KEY_GOES_HERE"
+};

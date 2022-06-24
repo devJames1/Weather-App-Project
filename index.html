@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <!-- CONTENTS CONTAINER -->
+
+    <div class="card">
+      <div class="search">
+        <input type="text" class="search-bar" placeholder="Search" />
+        <button class="search-button">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      <!-- WEATHER DATA TO BE DISPLAYED INSERTED BY JS-->
+      <div class="weather">
+        <h2 class="city" id="city-id"></h2>
+        <div class="switch-flex">
+          <h1 class="temp" id="temp-id"></h1>
+
+          <!-- toggle switch from Celsus to Fahrenheit -->
+          <div class="switch-container">
+            <label class="switch">
+              <input id="checkbox" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="loader active-loader"></div>
+      <p id="loader-text" class="loader-text">Getting Weather..</p>
+
+      <div class="flex">
+        <img
+          src="https://www.weatherbit.io/static/img/icons/.png"
+          alt=""
+          class="icon"
+          id="icon-id"
+        />
+        <div class="description"></div>
+      </div>
+
+      <div class="meta-data">
+        <div class="humidity">Humidity:</div>
+        <div class="wind">Wind speed:</div>
+      </div>
+      <!-- END OF DATA TO BE DISPLAYED INSERTED BY JS-->
+    </div>
+    <!-- END OF CONTAINER FOR THE CONTENTS -->
+
+    <footer>
+      Inspired by
+      <a href="https://www.youtube.com/c/davidnowak" target="_blank"
+        >David Nowak</a
+      >
+      &
+      <a
+        href="https://www.youtube.com/channel/UCipSxT7a3rn81vGLw9lqRkg"
+        target="_blank"
+        >Jonah Lawrence</a
+      >
+      <br />
+      <div id="copy"><!-- &copy; 2022 Okolie James (devJames) --></div>
+    </footer>
+    <!-- Main Script -->
+    <script type="module" src="/scripts/script.js"></script>
+  </body>
+</html>
